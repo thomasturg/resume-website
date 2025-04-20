@@ -1,6 +1,8 @@
+import { FC } from 'react';
 import Image from 'next/image'
+import Link from 'next/link';
 
-export default function Home() {
+const Home: FC = () => {
   return (
     <div className="min-h-screen bg-white">
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20">
@@ -53,4 +55,6 @@ export default function Home() {
       </main>
     </div>
   )
-} 
+}
+
+export default Home; 

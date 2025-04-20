@@ -3,21 +3,18 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Navigation from './components/Navigation'
 
-const inter = Inter({ 
-  subsets: ['latin'],
-  display: 'swap',
-})
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Thomas Sturgeon - Resume',
-  description: 'Professional resume and portfolio website',
+  title: 'Thomas Sturgeon',
+  description: 'Personal resume website of Thomas Sturgeon',
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+interface RootLayoutProps {
+  children: React.ReactNode;
+}
+
+export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
       <body className={`${inter.className} font-sans bg-gray-50`}>
