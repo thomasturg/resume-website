@@ -1,4 +1,3 @@
-import { EnvelopeIcon, PhoneIcon, MapPinIcon } from '@heroicons/react/24/outline'
 import Image from 'next/image'
 
 export default function Home() {
@@ -33,14 +32,16 @@ export default function Home() {
           </div>
 
           {/* Right Content - Image */}
-          <div className="lg:w-1/2 mt-8 lg:mt-0 w-full">
-            <div className="relative w-full">
-              <div className="absolute inset-0 bg-[#7C9CC6] rounded-bl-[100px] transform translate-x-6 translate-y-6"></div>
-              <div className="relative bg-gray-200 rounded-bl-[100px] overflow-hidden w-full aspect-[3/4] sm:aspect-square lg:aspect-[3/4]">
+          <div className="w-full lg:w-1/2 mt-8 lg:mt-0 px-4 sm:px-6 lg:px-0">
+            <div className="relative w-full max-w-sm mx-auto lg:max-w-none">
+              <div className="absolute inset-0 bg-[#7C9CC6] rounded-bl-[100px] transform translate-x-4 translate-y-4 sm:translate-x-6 sm:translate-y-6"></div>
+              <div className="relative bg-gray-200 rounded-bl-[100px] overflow-hidden w-full aspect-[4/5] sm:aspect-square">
                 <Image
                   src="/images/headshot.jpg"
                   alt="Thomas Sturgeon"
                   fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  quality={85}
                   style={{ objectFit: 'cover', objectPosition: 'center' }}
                   priority
                   className="rounded-bl-[100px]"
