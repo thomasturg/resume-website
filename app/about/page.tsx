@@ -37,10 +37,7 @@ export default function About() {
         <div className="bg-white rounded-lg shadow-sm p-6">
           <h2 className="text-2xl font-semibold text-gray-900 mb-4">Summary</h2>
           <p className="text-gray-700 leading-relaxed">
-            Resourceful university student with a strong academic record in Finance and Economics and hands-on experience in
-            customer service and logistics. Demonstrated ability to communicate effectively and manage diverse responsibilities,
-            from operating payment systems to timely deliveries. Eager to apply analytical and organizational skills to support client
-            implementations and product demos in an industrial technology setting.
+            Analytical and adaptable Finance & Economics student with proven success in customer-facing and operational roles. Known for blending sharp business acumen with hands-on logistics experience, I bring a proactive mindset, strong communication skills, and a detail-oriented approach to solving real-world problems. Passionate about translating data into insights and supporting high-impact implementations in fast-moving industrial and technology environments.
           </p>
         </div>
       </main>
