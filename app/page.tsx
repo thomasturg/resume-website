@@ -33,10 +33,10 @@ export default function Home() {
           </div>
 
           {/* Right Content - Image */}
-          <div className="lg:w-1/2 mt-12 lg:mt-0">
-            <div className="relative">
+          <div className="lg:w-1/2 mt-8 lg:mt-0 w-full">
+            <div className="relative w-full">
               <div className="absolute inset-0 bg-[#7C9CC6] rounded-bl-[100px] transform translate-x-6 translate-y-6"></div>
-              <div className="relative bg-gray-200 rounded-bl-[100px] overflow-hidden h-[600px]">
+              <div className="relative bg-gray-200 rounded-bl-[100px] overflow-hidden w-full aspect-[3/4] sm:aspect-square lg:aspect-[3/4]">
                 <Image
                   src="/images/headshot.jpg"
                   alt="Thomas Sturgeon"
